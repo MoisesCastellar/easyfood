@@ -3,12 +3,14 @@
 <head>
    <link 
     <meta charset="UTF-8">
-    <title>Easy Food</title>
+    <title>Galeria | Easy Food</title>
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
     <link rel="stylesheet" href="/ccs/estilos.css">
+    <link rel="stylesheet" href="/ccs/galeria.css">
     <link href="https://file.myfontastic.com/nWGgrUUTaCJwrRJz9gJpRW/icons.css" rel="stylesheet">
 </head>
-<body>
+
+    
   <header class="main-header">
     <div class="container container--flex">
         <div class="logo-container column column--50">
@@ -24,13 +26,14 @@
         </div>
     </div>
   </header>
+  
 <nav class="main-nav">
     <div class="container container--flex">
       <span class="icon-menu" id="btnmenu"></span>
       <ul class="menu" id="menu">
-          <li class="menu__item"><a href="/" class="menu__link menu__link--select">Inicio</a></li>
+          <li class="menu__item"><a href="/" class="menu__link">Inicio</a></li>
           <li class="menu__item"><a href="nosotros.html" class="menu__link">Nosotros</a></li>
-          <li class="menu__item"><a href="galeria.html" class="menu__link">Galeria</a></li>
+          <li class="menu__item"><a href="galeria.html" class="menu__link menu__link--select">Galeria</a></li>
           <li class="menu__item"><a href="contacto.html" class="menu__link">Contacto</a></li>
       </ul> 
       <div class="social-icon">
@@ -42,56 +45,40 @@
 </nav>  
 
 <section class="banner">
-    <img src="img/food3.jpeg" alt="" class="banner__img">
-    <div class="banner__content">La mejor y mas exquisita comida colombiana está aquí</div>
+    <img src="/img/galery/galeri-emp2.jpg" alt="" class="banner__img">
+    <div class="banner__content">Lo mejor de nosotros a tu servicio</div>
 </section>
 
 <main class="main">
-    <section class="group group--color">
-        <div class="container">
-            <h2 class="main__title">Bienvenido al sabor de la costa</h2>
-            <p class="main__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem labore, neque animi, sit repudiandae enim sequi reiciendis omnis libero, optio perspiciatis voluptatibus magnam repellat consequuntur non hic. Veritatis earum, animi.</p>
-        </div> 
-     </section>   
-     
-     <section class="group main__about__description">
-         <div class="container container--flex">
-             <div class="column column--50">
-                 <img src="img/banner2.jpg" alt="">
-             </div>
-             <div class="column column--50">
-                 <h3 class="column__title">Platos ricos de la costa Caribe</h3>
-                 <p class="column__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium repellendus sit reprehenderit magnam, quo labore veritatis, aperiam praesentium, modi soluta vitae sunt obcaecati nesciunt corporis molestias officia quae laborum. Eum.</p>
-                 <a href="" class="btn btn--contact">Contact</a>
-             </div>
-         </div>
-     </section>
-     
-     <section class="group today-special">
-         <h2 class="group__title">Especiales de hoy</h2>
-         <div class="container container--flex">
-             <div class="column column--50-25">
-                 <img src="img/plate1.jpg" alt="" class="today-special__img">
-                 <div class="today-special__title">Ajiaco</div>
-                 <div class="today-special__price">$20.000</div>
-             </div>
-             <div class="column column--50-25">
-                 <img src="img/plate2.jpg" alt="" class="today-special__img">
-                 <div class="today-special__title">Bandeja Paisa</div>
-                 <div class="today-special__price">$20.000</div>
-             </div>
-             <div class="column column--50-25">
-                 <img src="img/plate3.jpg" alt="" class="today-special__img">
-                 <div class="today-special__title">Arroz Cubano</div>
-                 <div class="today-special__price">$20.000</div>
-             </div>
-             <div class="column column--50-25">
-                 <img src="img/plate4.jpg" alt="" class="today-special__img">
-                 <div class="today-special__title">Chop Suey</div>
-                 <div class="today-special__price">$20.000</div>
-             </div>
-         </div>
-     </section>     
+    <div class="group gallery">
+        <h2 class="group__title">Nuestra Galeria</h2>
+        <div class="container container--flex">
+            <div class="column column--50-25">
+                <img src="/img/galery/galeri-carima1.jpg" alt="" class="gallery__img gallery__img--big">
+                <img src="/img/galery/galeri-emp1l.jpg" alt="" class="gallery__img gallery__img--small">
+            </div>
+            <div class="column column--50-25">
+                <img src="/img/galery/galeri-quibbe1.jpg" alt="" class="gallery__img gallery__img--small">
+                <img src="/img/galery/galeri-deditos.jpg" alt="" class="gallery__img gallery__img--big"> 
+            </div>
+            <div class="column column--50-25">
+                <img src="/img/galery/galeri-costi2.jpg" alt="" class="gallery__img gallery__img--big">
+                <img src="/img/galery/galeri-emp2.jpg" alt="" class="gallery__img gallery__img--small">
+            </div>
+            <div class="column column--50-25">
+                <img src="/img/galery/galeri-lasag1.jpg" alt="" class="gallery__img gallery__img--small">
+                <img src="/img/galery/galeri-pizza.jpg" alt="" class="gallery__img gallery__img--big"> 
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal__content">
+            <img src="" alt="" class="modal__img" id="modal__img">
+        </div>
+        <div class="modal__boton" id="modal__boton">X</div>
+      </div>    
+    <body>
+    
 </main>
 <footer class="main-footer">
          <div class="container container--flex">
@@ -114,7 +101,7 @@
         <p class="copy">@ 2018 Easy Food Medellin | Todos los derechos reservados</p>
          </div>
 </footer> 
-<script src="js/menu.js"> </script>  
-
+<script src="js/menu.js"> </script> 
+<script src="js/modal.js"> </script>
 </body>
 </html>
