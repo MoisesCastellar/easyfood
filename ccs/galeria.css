@@ -20,7 +20,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: rgb(0,0,0,0.9);
+    background: rgb(0,0,0,0.8);
     width: 100%;
     height:  100vh;
     padding: 10px;
@@ -58,9 +58,3 @@
 .modal--open {
     display: block;
 }
-/*
- .modal:hover + .gallery__img:hover {
-    position: absolute;
-    display: block;
-  }
-*/
